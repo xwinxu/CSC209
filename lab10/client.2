@@ -1,0 +1,155 @@
+Script started on Thu 21 Mar 2019 01:33:08 AM EDT
+]0;xuwinni1@wolf:/h/u15/c7/00/xuwinni1/Desktop/xuwinni1/lab10xuwinni1[36mλ[36m~/Desktop/xuwinni1/lab10 [33m:)[37m gdb randclient
+GNU gdb (Ubuntu 7.11.1-0ubuntu1~16.5) 7.11.1
+Copyright (C) 2016 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+<http://www.gnu.org/software/gdb/documentation/>.
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from randclient...done.
+(gdb) run 127.0.0.1
+Starting program: /h/u15/c7/00/xuwinni1/Desktop/xuwinni1/lab10/randclient 127.0.0.1
+connect: Connection refused
+[Inferior 1 (process 7004) exited with code 01]
+(gdb) n
+The program is not being run.
+(gdb) r
+Starting program: /h/u15/c7/00/xuwinni1/Desktop/xuwinni1/lab10/randclient 127.0.0.1
+connect: Connection refused
+[Inferior 1 (process 7174) exited with code 01]
+(gdb) n
+The program is not being run.
+(gdb) r
+Starting program: /h/u15/c7/00/xuwinni1/Desktop/xuwinni1/lab10/randclient 127.0.0.1
+connect: Connection refused
+[Inferior 1 (process 7175) exited with code 01]
+(gdb) n
+The program is not being run.
+(gdb) rn[K
+Starting program: /h/u15/c7/00/xuwinni1/Desktop/xuwinni1/lab10/randclient 127.0.0.1
+[Inferior 1 (process 7177) exited normally]
+(gdb) n
+The program is not being run.
+(gdb) n
+The program is not being run.
+(gdb) n
+The program is not being run.
+(gdb) n
+The program is not being run.
+(gdb) m[Kn
+The program is not being run.
+(gdb) n
+The program is not being run.
+(gdb) n
+The program is not being run.
+(gdb) n
+The program is not being run.
+(gdb) n
+The program is not being run.
+(gdb) 
+The program is not being run.
+(gdb) 
+The program is not being run.
+(gdb) 
+The program is not being run.
+(gdb) 
+The program is not being run.
+(gdb) 
+The program is not being run.
+(gdb) 
+The program is not being run.
+(gdb) 
+The program is not being run.
+(gdb) n
+The program is not being run.
+(gdb) n
+The program is not being run.
+(gdb) n
+The program is not being run.
+(gdb) 
+The program is not being run.
+(gdb) 
+The program is not being run.
+(gdb) 
+The program is not being run.
+(gdb) 
+The program is not being run.
+(gdb) n
+The program is not being run.
+(gdb) r[K
+The program is not being run.
+(gdb) 
+The program is not being run.
+(gdb) 
+The program is not being run.
+(gdb) 
+The program is not being run.
+(gdb) 
+The program is not being run.
+(gdb) 
+The program is not being run.
+(gdb) 
+The program is not being run.
+(gdb) 
+The program is not being run.
+(gdb) 
+The program is not being run.
+(gdb) 
+The program is not being run.
+(gdb) 
+The program is not being run.
+(gdb) 
+The program is not being run.
+(gdb) 
+The program is not being run.
+(gdb) run 127.0.0.0[K1[K[K[K[K[K[K[K[K[K[K[K[K[Krun 127.0.0.0[K1
+Starting program: /h/u15/c7/00/xuwinni1/Desktop/xuwinni1/lab10/randclient 127.0.0.1
+[Inferior 1 (process 7360) exited normally]
+(gdb) 
+(gdb) n
+The program is not being run.
+(gdb) 
+The program is not being run.
+(gdb) 
+The program is not being run.
+(gdb) 
+The program is not being run.
+(gdb) 
+The program is not being run.
+(gdb) b main
+Breakpoint 1 at 0x400b45: file randclient.c, line 24.
+(gdb) run 127.0.0.1
+Starting program: /h/u15/c7/00/xuwinni1/Desktop/xuwinni1/lab10/randclient 127.0.0.1
+
+Breakpoint 1, main (argc=2, argv=0x7fffffffead8) at randclient.c:24
+24          if (argc != 2) {
+(gdb) n
+29          int soc = connect_to_server(PORT, argv[1]);
+(gdb) 
+31          write_random_pieces(soc, MESSAGE, TIMES);
+(gdb) 
+33          close(soc);
+(gdb) 
+34          return 0;
+(gdb) 
+35      }
+(gdb) 
+__libc_start_main (main=0x400b36 <main>, argc=2, argv=0x7fffffffead8, init=<optimized out>, 
+    fini=<optimized out>, rtld_fini=<optimized out>, stack_end=0x7fffffffeac8)
+    at ../csu/libc-start.c:325
+325     ../csu/libc-start.c: No such file or directory.
+(gdb) 
+[Inferior 1 (process 7392) exited normally]
+(gdb) quit
+]0;xuwinni1@wolf:/h/u15/c7/00/xuwinni1/Desktop/xuwinni1/lab10xuwinni1[36mλ[36m~/Desktop/xuwinni1/lab10 [33m:)[37m exit
+exit
+
+Script done on Thu 21 Mar 2019 01:40:47 AM EDT
